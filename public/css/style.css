@@ -1,0 +1,113 @@
+body {
+    font-family: "Caudex", serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+.navbar {
+    height: 4rem;
+    background-color: white;
+}
+
+.fa {
+    color: brown;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+}
+
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+    font-size: 1.01rem;
+    color: #222222;
+    text-shadow: 2px 2px 5px #222222;
+}
+
+.f-info-socials, .f-info-brand, .f-info-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.f-info-socials i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.f-info {
+    display: flex;
+    flex-wrap: wrap;
+    height: 8rem;
+    justify-content: center;
+    text-align: center;
+    align-items: space-evenly;
+    background-color: antiquewhite;
+}
+
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text {
+    font-weight: 300;
+}
+
+.listing-link {
+    text-decoration: none;
+}
+
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.1;
+    background-color: white;
+}
+
+.ctn {
+    justify-content: center;
+    text-align: center;
+}
+.add-btn, .edit-btn {
+    width: 200px;
+    font-size: 25px !important;
+    border: none;
+    border-radius: 30px !important;
+    box-shadow: 1px 1px 5px #222222;
+    margin-bottom: 8px;
+}
+
+.show-img {
+    height: 40vh;
+   
+}
+.showbtn {
+    display: flex;
+    margin-right: 20px;
+}

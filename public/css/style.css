@@ -11,7 +11,11 @@ body {
 
 .navbar {
     height: 4rem;
-    background-color: white;
+    background-color: papayawhip;
+}
+
+.mob {
+    background-color: papayawhip;
 }
 
 .fa {
@@ -111,3 +115,18 @@ body {
     display: flex;
     margin-right: 20px;
 }
+
+  #filters {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .filter {
+    text-align: center;
+    margin-right: 3rem;
+    margin-top: 2rem;
+    opacity: 0.6;
+  }
+  .filter:hover {
+    opacity: 1;
+    cursor: pointer;
+  }

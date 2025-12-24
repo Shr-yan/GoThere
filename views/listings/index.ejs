@@ -1,72 +1,65 @@
 <% layout("/layouts/boilerplate") %>
+<!-- 
+<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-<style>
-  #filters {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .filter {
-    text-align: center;
-    margin-right: 3rem;
-    margin-top: 2rem;
-    opacity: 0.6;
-  }
-  .filter:hover {
-    opacity: 1;
-    cursor: pointer;
-  }
-</style>
-<div id="filters">
-  <div class="filter">
+
+  <div class="collapse navbar-collapse mob" id="navbarNavAltMarkup filters">
+  <div class="filter navbar-nav">
     <div><i class="fa-solid fa-fire"></i></div>
     <p>Trending</p>
   </div>
 
-  <div class="filter">
+  <div class="filter navbar-nav">
     <div><i class="fa-solid fa-bed"></i></div>
     <p>Rooms</p>
   </div>
 
-  <div class="filter">
+  <div class="filter navbar-nav">
     <div><i class="fa-solid fa-mountain-city"></i></div>
     <p>Iconic cities</p>
   </div>
 
-  <div class="filter">
+  <div class="filter navbar-nav">
     <div><i class="fa-brands fa-fort-awesome"></i></div>
     <p>Castles</p>
   </div>
 
-  <div class="filter">
+  <div class="filter navbar-nav">
     <div><i class="fa-solid fa-mountain"></i></div>
     <p>Mountain</p>
   </div>
 
   
-  <div class="filter">
+  <div class="filter navbar-nav">
     <div><i class="fa-solid fa-campground"></i></div>
     <p>Camping</p>
   </div>
-  <div class="filter">
+  <div class="filter navbar-nav">
     <div><i class="fa-solid fa-cow"></i></div>
     <p>Farm</p>
   </div>
 
-  <div class="filter">
+  <div class="filter navbar-nav">
     <div><i class="fa-solid fa-sailboat"></i></div>
     <p>Beach</p>
   </div>
-  <div class="filter">
+  <div class="filter navbar-nav">
     <div><i class="fa-solid fa-person-swimming"></i></div>
     <p>Amazing pools</p>
   </div>
 </div>
+
+</nav> -->
+
    
-    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
-        <%for(listing of allListings){%>
+    <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 ">
+        <%for(let listing of allListings){%>
             <a href="/listings/<%=listing._id%>" class="listing-link">
                 <div class="card col listing-card" >
-     <img src="<%= listing.image.url %>" class="card-img-top" alt="listing_image" style="height: 15rem;">
+     <img src="<%= listing.image.url %>" class="card-img-top" alt="listing_image" style="height: 10rem;">
      <div class="card-img-overlay"></div>
   <div class="card-body">
     <p class="card-text">

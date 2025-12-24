@@ -81,6 +81,10 @@ app.use((req, res, next) => {
     next();
 });
 
+app.get("/", (req, res) => {
+    res.redirect("/listings")
+});
+
 app.use("/listings", listings);
 app.use("/listings/:id/reviews", reviews);
 app.use("/", users);
@@ -91,12 +95,15 @@ app.all("/{*splat}", (req, res, next) => {
     next(new ExpressError(404, "Page not found!"));
 });
 
+
+
 app.use((err, req, res, next) => {
     let {statusCode=500, message="Something went wrong!"} = err ;
     res.status(statusCode).render("error.ejs", {message});
     //res.status(statusCode).send(message);
 });
 
+//const mongoUrl = "mongodb://127.0.0.1:27017/GoThere";
 
 main().then(() => {
     console.log("DB is connected");
